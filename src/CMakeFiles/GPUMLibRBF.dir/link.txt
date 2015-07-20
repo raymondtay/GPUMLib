@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq libGPUMLibRBF.a  CMakeFiles/GPUMLibRBF.dir/RBF/RadialBasisFunction.cpp.o CMakeFiles/GPUMLibRBF.dir/RBF/utils.cpp.o CMakeFiles/GPUMLibRBF.dir/KMeans/KMeans.cpp.o CMakeFiles/GPUMLibRBF.dir/RBF/GPUMLibRBF_generated_RBFKernels.cu.o CMakeFiles/GPUMLibRBF.dir/KMeans/GPUMLibRBF_generated_KMeansKernels.cu.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libGPUMLibRBF.a

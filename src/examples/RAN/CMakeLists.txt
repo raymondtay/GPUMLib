@@ -1,0 +1,8 @@
+include(FindCUDA)
+add_definitions (-D_CONSOLE)
+INCLUDE_DIRECTORIES($ENV{CULA_INC_PATH})
+
+CUDA_ADD_EXECUTABLE(RAN RAN.cpp ../Dataset/Dataset.cpp)
+target_link_libraries (RAN GPUMLibRAN ${CULA_LIBS})
+CUDA_ADD_CUBLAS_TO_TARGET(RAN)
+install(TARGETS RAN DESTINATION ${CMAKE_BINARY_DIR})

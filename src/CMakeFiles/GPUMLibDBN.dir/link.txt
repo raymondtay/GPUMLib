@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq libGPUMLibDBN.a  CMakeFiles/GPUMLibDBN.dir/RBM/GPUMLibDBN_generated_rbm.cu.o CMakeFiles/GPUMLibDBN.dir/RBM/GPUMLibDBN_generated_RBMinitKernels.cu.o CMakeFiles/GPUMLibDBN.dir/RBM/GPUMLibDBN_generated_RBMstatus.cu.o CMakeFiles/GPUMLibDBN.dir/RBM/GPUMLibDBN_generated_RBMstatusSmall.cu.o CMakeFiles/GPUMLibDBN.dir/RBM/GPUMLibDBN_generated_RBMCorrectWeights.cu.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libGPUMLibDBN.a

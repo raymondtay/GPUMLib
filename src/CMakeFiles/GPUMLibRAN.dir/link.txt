@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq libGPUMLibRAN.a  CMakeFiles/GPUMLibRAN.dir/RAN/ResourceAllocatingNetwork.cpp.o CMakeFiles/GPUMLibRAN.dir/RAN/utils.cpp.o CMakeFiles/GPUMLibRAN.dir/RAN/GPUMLibRAN_generated_RANKernels.cu.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libGPUMLibRAN.a

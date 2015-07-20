@@ -1,0 +1,8 @@
+include(FindCUDA)
+add_definitions (-D_CONSOLE)
+INCLUDE_DIRECTORIES($ENV{CULA_INC_PATH})
+
+CUDA_ADD_EXECUTABLE(RBF RBF.cpp ../Dataset/Dataset.cpp)
+target_link_libraries (RBF GPUMLibRBF ${CULA_LIBS})
+CUDA_ADD_CUBLAS_TO_TARGET(RBF)
+install(TARGETS RBF DESTINATION ${CMAKE_BINARY_DIR})

@@ -1,0 +1,256 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 178, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FacesNMF"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "FacesNMF, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009-2010, Noel Lopes",IDC_STATIC,42,26,129,8
+    DEFPUSHBUTTON   "OK",IDOK,121,41,50,14,WS_GROUP
+END
+
+IDD_FACESNMF_DIALOG DIALOGEX 0, 0, 591, 350
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NMF - Faces"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "+1 train",IDOK,256,38,59,14,WS_DISABLED
+    CONTROL         "",IDC_SLIDER_ZOOM,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,22,69,100,15
+    LTEXT           "Image",IDC_STATIC,124,72,21,8
+    CONTROL         "",IDC_SLIDER_IMAGE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,144,69,127,15
+    LTEXT           "Zoom",IDC_STATIC,7,72,18,8
+    CONTROL         "",IDC_SLIDER_ITERATIONS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,123,37,132,15
+    LTEXT           "Iteration: 0",IDC_STATIC_ITERATION,7,57,548,10,SS_SUNKEN
+    CONTROL         "Use CUDA",IDC_CHECK_USE_CUDA,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,380,40,49,10
+    LTEXT           "Train folder",IDC_STATIC,7,9,38,8
+    EDITTEXT        IDC_EDIT_TRAIN_FOLDER,47,7,295,14,ES_AUTOHSCROLL
+    LTEXT           "Test folder",IDC_STATIC,9,24,36,8
+    EDITTEXT        IDC_EDIT_TEST_FOLDER,47,22,295,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_METHOD,380,23,124,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Randomize",IDC_BUTTON_RND,455,7,48,14
+    LTEXT           "r",IDC_STATIC_RANK,382,9,8,8
+    EDITTEXT        IDC_EDIT_RANK,387,7,67,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Update",IDC_BUTTON_UPDATE_IMAGES,344,7,32,30
+    LTEXT           "tol",IDC_STATIC,35,41,9,8
+    EDITTEXT        IDC_EDIT_TOL,48,38,78,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "+1 test",ID_TRAIN_TEST,317,38,59,14,WS_DISABLED
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,507,7,50,29
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Noel Lopes"
+            VALUE "FileDescription", "NMF"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FacesNMF.exe"
+            VALUE "LegalCopyright", "(c) 2009, Noel Lopes"
+            VALUE "OriginalFilename", "FacesNMF.exe"
+            VALUE "ProductName", "NMF"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_FACESNMF_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 584
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FACESNMF_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_METHOD, 0x403, 27, 0
+0x754d, 0x746c, 0x7069, 0x696c, 0x6163, 0x6974, 0x6576, 0x2820, 0x7545, 
+0x6c63, 0x6469, 0x6165, 0x296e, "\000" 
+    IDC_COMBO_METHOD, 0x403, 28, 0
+0x754d, 0x746c, 0x7069, 0x696c, 0x6163, 0x6974, 0x6576, 0x2820, 0x6944, 
+0x6576, 0x6772, 0x6e65, 0x6563, 0x0029, 
+    IDC_COMBO_METHOD, 0x403, 21, 0
+0x6441, 0x6964, 0x6974, 0x6576, 0x2820, 0x7545, 0x6c63, 0x6469, 0x6165, 
+0x296e, "\000" 
+    IDC_COMBO_METHOD, 0x403, 22, 0
+0x6441, 0x6964, 0x6974, 0x6576, 0x2820, 0x6944, 0x6576, 0x6772, 0x6e65, 
+0x6563, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FacesNMF..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\FacesNMF.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FacesNMF.ico"
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\FacesNMF.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
