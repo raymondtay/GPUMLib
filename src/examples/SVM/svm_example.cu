@@ -77,7 +77,7 @@ namespace GPUMLib {
 	bool validCharacter(char &c) {
 		if (c >= '0' && c <= '9')
 			return true;
-		if (c == ',' || c == '.' || c == ' ' || c == '\r' || c == '\n' || c == '-' || c == 'e' || c == 'E')
+		if (c == ',' || c == '.' || c == ' ' || c == '\r' || c == '\n' || c == '-' || c == '+' || c == 'e' || c == 'E')
 			return true;
 		return 0;
 	}
